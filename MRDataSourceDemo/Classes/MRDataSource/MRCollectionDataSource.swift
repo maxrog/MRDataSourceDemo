@@ -62,6 +62,13 @@ class MRCollectionViewController: UIViewController, UICollectionViewDelegate {
     
     // MARK: TODO any UICollectionViewDelegate default behavior (spacing etc)
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewModel = sections[indexPath.section].items[indexPath.row]
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            viewModel.selectCell(cell, navController: navigationController)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {

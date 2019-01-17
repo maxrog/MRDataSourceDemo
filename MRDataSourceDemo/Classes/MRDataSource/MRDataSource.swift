@@ -25,6 +25,7 @@ protocol MRViewModel {
     func cell(forTableView tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell
     func cell(forCollectionView collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> UICollectionViewCell
     func size() -> (rowHeight: CGFloat?, itemSize: CGSize?)
+    func selectCell(_ view: UIView, navController: UINavigationController?)
 }
 /// Default Implementation
 extension MRViewModel {

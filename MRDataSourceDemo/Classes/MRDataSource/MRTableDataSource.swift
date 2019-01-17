@@ -66,6 +66,13 @@ class MRTableViewController: UIViewController, UITableViewDelegate {
 
     // MARK: TODO any other UITableViewDelegate default behavior
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewModel = sections[indexPath.section].items[indexPath.row]
+        if let cell = tableView.cellForRow(at: indexPath) {
+            viewModel.selectCell(cell, navController: navigationController)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let viewModel = sections[indexPath.section].items[indexPath.row]
         return viewModel.size().rowHeight ?? 0
