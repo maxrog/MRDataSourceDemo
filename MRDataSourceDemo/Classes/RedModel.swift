@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RedModel: MRViewModel {
+struct RedModel: MRViewModel {
     
     static var reuseIdentifier: String = String(describing: type(of: RedModel.self))
     var backgroundColor = UIColor.red.withAlphaComponent(0.4)
