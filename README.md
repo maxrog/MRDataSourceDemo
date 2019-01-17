@@ -3,8 +3,8 @@ I decided to make this to explore some architectural problems and save myself so
 It is much quicker to whip up multiple screens now along with having thinned down view controllers, and a nice separation of concerns. 
 I look forward to keep improving this as time permits. 
 
-## Steps to Implement
-These are the bare minimum steps to get started.
+## Getting Started
+These are the minimum steps to get started.
 
 ### 1.
 * Create a View Model object that conforms to the `MRViewModel` protocol.
@@ -18,6 +18,7 @@ These are the bare minimum steps to get started.
 * Override the `registerCells()` method if needed.
 * In the appropriate lifecycle method, create `MRViewModel` objects from step 2 followed by adding them to `MRDataSection` objects as appropriate. 
 * Assign `self.sections` to array of `MRDataSection` objects
+* Override any delegate methods necessary such as didSelect. The corresponding view model can be accessed via the section and pattern matched on to decide what action to take. 
 
 ### Contained is a simple UITableView Example
 
