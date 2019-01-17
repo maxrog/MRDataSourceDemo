@@ -18,7 +18,7 @@ These are the minimum steps to get started.
 * Override the `registerCells()` method if needed.
 * In the appropriate lifecycle method, create `MRViewModel` objects from step 2 followed by adding them to `MRDataSection` objects as appropriate. 
 * Assign `self.sections` to array of `MRDataSection` objects
-* Override any delegate methods necessary such as didSelect. The corresponding view model can be accessed via the section and pattern matched on to decide what action to take. 
+* Override any delegate methods necessary such as didSelect. The corresponding view model can be accessed via the sections property. I suggest pattern matching to decide what action to take if there is multiple types.
 
 ### Contained is a simple UITableView Example
 
