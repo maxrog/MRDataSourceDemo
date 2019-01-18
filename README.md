@@ -1,7 +1,7 @@
 # MRDataSourceDemo
 I decided to make this to explore some architectural problems and save myself some time down the road. 
 It is much quicker to whip up multiple screens now along with having thinned down view controllers, and a nice separation of concerns. 
-The abstraction currently provides DataSource/Delegate default functionality for `numberOfSections`, `numberOfItemsInSection`, `cellForItem`, `didSelectItem` alongside basic section header configuration. 
+The abstraction currently provides DataSource/Delegate default functionality for `numberOfSections`, `numberOfItemsInSection`, `cellForItem`, `didSelectItem`, `shouldHighlightItem`, alongside basic section header configuration. 
 I look forward to improving this as time permits. 
 
 ## Getting Started
