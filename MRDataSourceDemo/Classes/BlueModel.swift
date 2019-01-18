@@ -25,6 +25,8 @@ struct BlueModel: MRViewModel {
         return cell
     }
     
+    var selectable: Bool { return true }
+    
     func selectCell(_ view: UIView, navController: UINavigationController?) {
         guard let cell = view as? BlueTableCell else { return }
         cell.contentView.backgroundColor = UIColor.blue.withAlphaComponent(0.8)

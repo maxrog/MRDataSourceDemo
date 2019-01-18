@@ -25,6 +25,8 @@ struct RedModel: MRViewModel {
         return cell
     }
     
+    var selectable: Bool { return true }
+    
     func selectCell(_ view: UIView, navController: UINavigationController?) {
         guard let cell = view as? RedTableCell else { return }
         cell.contentView.backgroundColor = UIColor.red.withAlphaComponent(0.8)

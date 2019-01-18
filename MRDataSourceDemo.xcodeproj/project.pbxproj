@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345C97C121F151F800D9678B /* MRTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C97AE21F151F700D9678B /* MRTableDataSource.swift */; };
+		345C97C421F151F800D9678B /* MRCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C97B121F151F700D9678B /* MRCollectionDataSource.swift */; };
+		345C97C521F151F800D9678B /* MRDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C97B221F151F700D9678B /* MRDataSource.swift */; };
 		34E0B32E21EFFB7E00E003E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B32D21EFFB7E00E003E1 /* AppDelegate.swift */; };
 		34E0B33321EFFB7E00E003E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E0B33121EFFB7E00E003E1 /* Main.storyboard */; };
 		34E0B33521EFFB8000E003E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E0B33421EFFB8000E003E1 /* Assets.xcassets */; };
 		34E0B33821EFFB8000E003E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34E0B33621EFFB8000E003E1 /* LaunchScreen.storyboard */; };
-		34E0B34521EFFC5700E003E1 /* MRDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34221EFFC5700E003E1 /* MRDataSource.swift */; };
-		34E0B34621EFFC5700E003E1 /* MRCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34321EFFC5700E003E1 /* MRCollectionDataSource.swift */; };
-		34E0B34721EFFC5700E003E1 /* MRTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34421EFFC5700E003E1 /* MRTableDataSource.swift */; };
 		34E0B34921EFFC6500E003E1 /* RedBlueTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34821EFFC6500E003E1 /* RedBlueTableController.swift */; };
 		34E0B34B21EFFC9600E003E1 /* RedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34A21EFFC9600E003E1 /* RedTableCell.swift */; };
 		34E0B34D21EFFCA000E003E1 /* BlueTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E0B34C21EFFCA000E003E1 /* BlueTableCell.swift */; };
@@ -22,15 +22,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		345C97AE21F151F700D9678B /* MRTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTableDataSource.swift; sourceTree = "<group>"; };
+		345C97B121F151F700D9678B /* MRCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRCollectionDataSource.swift; sourceTree = "<group>"; };
+		345C97B221F151F700D9678B /* MRDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRDataSource.swift; sourceTree = "<group>"; };
 		34E0B32A21EFFB7E00E003E1 /* MRDataSourceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRDataSourceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E0B32D21EFFB7E00E003E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E0B33221EFFB7E00E003E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34E0B33421EFFB8000E003E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34E0B33721EFFB8000E003E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34E0B33921EFFB8000E003E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34E0B34221EFFC5700E003E1 /* MRDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRDataSource.swift; sourceTree = "<group>"; };
-		34E0B34321EFFC5700E003E1 /* MRCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRCollectionDataSource.swift; sourceTree = "<group>"; };
-		34E0B34421EFFC5700E003E1 /* MRTableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRTableDataSource.swift; sourceTree = "<group>"; };
 		34E0B34821EFFC6500E003E1 /* RedBlueTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedBlueTableController.swift; sourceTree = "<group>"; };
 		34E0B34A21EFFC9600E003E1 /* RedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableCell.swift; sourceTree = "<group>"; };
 		34E0B34C21EFFCA000E003E1 /* BlueTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTableCell.swift; sourceTree = "<group>"; };
@@ -49,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345C979921F151F700D9678B /* MRDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				345C97AE21F151F700D9678B /* MRTableDataSource.swift */,
+				345C97B121F151F700D9678B /* MRCollectionDataSource.swift */,
+				345C97B221F151F700D9678B /* MRDataSource.swift */,
+			);
+			path = MRDataSource;
+			sourceTree = "<group>";
+		};
 		34E0B32121EFFB7E00E003E1 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +88,7 @@
 		34E0B33F21EFFB9400E003E1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				34E0B34121EFFC1700E003E1 /* MRDataSource */,
+				345C979921F151F700D9678B /* MRDataSource */,
 				34E0B34821EFFC6500E003E1 /* RedBlueTableController.swift */,
 				34E0B34A21EFFC9600E003E1 /* RedTableCell.swift */,
 				34E0B34C21EFFCA000E003E1 /* BlueTableCell.swift */,
@@ -97,16 +107,6 @@
 				34E0B33921EFFB8000E003E1 /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		34E0B34121EFFC1700E003E1 /* MRDataSource */ = {
-			isa = PBXGroup;
-			children = (
-				34E0B34321EFFC5700E003E1 /* MRCollectionDataSource.swift */,
-				34E0B34221EFFC5700E003E1 /* MRDataSource.swift */,
-				34E0B34421EFFC5700E003E1 /* MRTableDataSource.swift */,
-			);
-			path = MRDataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,13 +181,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34E0B34921EFFC6500E003E1 /* RedBlueTableController.swift in Sources */,
-				34E0B34721EFFC5700E003E1 /* MRTableDataSource.swift in Sources */,
 				34E0B32E21EFFB7E00E003E1 /* AppDelegate.swift in Sources */,
+				345C97C121F151F800D9678B /* MRTableDataSource.swift in Sources */,
 				34E0B35121EFFDCE00E003E1 /* BlueModel.swift in Sources */,
-				34E0B34621EFFC5700E003E1 /* MRCollectionDataSource.swift in Sources */,
+				345C97C521F151F800D9678B /* MRDataSource.swift in Sources */,
 				34E0B34B21EFFC9600E003E1 /* RedTableCell.swift in Sources */,
 				34E0B34F21EFFDC500E003E1 /* RedModel.swift in Sources */,
-				34E0B34521EFFC5700E003E1 /* MRDataSource.swift in Sources */,
+				345C97C421F151F800D9678B /* MRCollectionDataSource.swift in Sources */,
 				34E0B34D21EFFCA000E003E1 /* BlueTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
