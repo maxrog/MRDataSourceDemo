@@ -40,7 +40,7 @@ class MRTableViewDataSource: NSObject, UITableViewDataSource {
 // MARK: TableView Superclass
 
 class MRTableViewController: UIViewController, UITableViewDelegate {
-
+    
     @IBOutlet var tableView: UITableView!
     var dataSource: MRTableViewDataSource!
     
@@ -60,10 +60,10 @@ class MRTableViewController: UIViewController, UITableViewDelegate {
         super.viewDidLoad()
         registerCells()
     }
-
+    
     /// Override this if needed
     func registerCells() {}
-
+    
     // MARK: TODO any other UITableViewDelegate default behavior
     
     func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
@@ -74,7 +74,7 @@ class MRTableViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewModel = sections[indexPath.section].items[indexPath.row]
         if let cell = tableView.cellForRow(at: indexPath) {
-            viewModel.selectCell(cell, navController: navigationController)
+            viewModel.selectCell(cell, nil, viewController: self)
         }
     }
     
@@ -92,6 +92,6 @@ class MRTableViewController: UIViewController, UITableViewDelegate {
         let section = sections[section]
         return section.sectionView
     }
-
+    
     
 }
