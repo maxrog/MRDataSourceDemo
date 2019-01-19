@@ -71,7 +71,7 @@ class MRCollectionViewController: UIViewController, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let viewModel = sections[indexPath.section].items[indexPath.row]
         if let cell = collectionView.cellForItem(at: indexPath) {
-            viewModel.selectCell(nil, cell, viewController: self)
+            viewModel.selectCell(cell, viewController: self, indexPath: indexPath)
         }
     }
     

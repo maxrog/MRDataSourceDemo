@@ -26,8 +26,7 @@ struct BlueModel: MRViewModel {
     }
     
     var selectable: Bool { return true }
-    
-    func selectCell(_ view: UIView, navController: UINavigationController?) {
+    func selectCell(_ view: UIView?, viewController: UIViewController, indexPath: IndexPath) {
         guard let cell = view as? BlueTableCell else { return }
         cell.contentView.backgroundColor = UIColor.blue.withAlphaComponent(0.8)
         print("Tapped blue cell with id \(self.id)")

@@ -74,7 +74,7 @@ class MRTableViewController: UIViewController, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewModel = sections[indexPath.section].items[indexPath.row]
         if let cell = tableView.cellForRow(at: indexPath) {
-            viewModel.selectCell(cell, nil, viewController: self)
+            viewModel.selectCell(cell, viewController: self, indexPath: indexPath)
         }
     }
     

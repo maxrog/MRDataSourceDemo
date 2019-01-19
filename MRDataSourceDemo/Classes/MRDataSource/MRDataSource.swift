@@ -26,7 +26,8 @@ protocol MRViewModel {
     func cell(forCollectionView collectionView: UICollectionView, atIndexPath indexPath: IndexPath) -> UICollectionViewCell
     func size() -> (rowHeight: CGFloat?, itemSize: CGSize?)
     var selectable: Bool { get }
-    func selectCell(_ tableViewCell: UITableViewCell?, _ collectionViewCell: UICollectionViewCell?, viewController: UIViewController)
+    // cast view to Table or Collection cell
+    func selectCell(_ view: UIView?, viewController: UIViewController, indexPath: IndexPath)
 }
 /// Default Implementation
 extension MRViewModel {
@@ -39,7 +40,7 @@ extension MRViewModel {
 }
 
 /// MRDataSourceSection conforms to this protocol below
-protocol MRDataSourceSection {
+private protocol MRDataSourceSection {
     var items: [MRViewModel] { get set }
     var sectionTitle: String? { get set }
     var sectionHeight: CGFloat? { get set }
