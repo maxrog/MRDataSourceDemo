@@ -35,7 +35,7 @@ class MRCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
 // MARK: CollectionView Superclass
 
-class MRCollectionViewController: UIViewController, UICollectionViewDelegate {
+class MRCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var collectionView: UICollectionView!
     var dataSource: MRCollectionViewDataSource!
